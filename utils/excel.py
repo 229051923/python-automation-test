@@ -85,10 +85,10 @@ def write_excel(file, data_list: list, sheet_name='sheet1', start_col=0, start_r
 
 
 if __name__ == '__main__':
-    # file = "C:\easytest-log\库龄数据.xlsx"
-    # p = ParseExcel(file)
-    # print(p.get_data())
-    # print(p.get_head())
-    # print(p.filter_data(col=3, value='N21226-c04879728ac74705adf6b8f09f261172'))
+    file = "test.xlsx"
+    p = ParseExcel(file)
+    print(p.get_data())
+    print(p.get_head())
+    print(p.filter_data(col=3, value='N21226-c04879728ac74705adf6b8f09f261172'))
     a = [[1, 2, 3, 4], [5, 6, 7, 8]]
     write_excel("the_file.xlsx", a)
